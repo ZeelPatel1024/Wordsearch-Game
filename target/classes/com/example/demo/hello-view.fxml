@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="866.0" prefWidth="1111.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <TabPane layoutX="14.0" layoutY="7.0" prefHeight="859.0" prefWidth="1551.0" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+         <Tab text="Start">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <ImageView fitHeight="830.0" fitWidth="1521.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../pics/Fantasy-wallpapers-HD.jpg" />
+                        </image>
+                     </ImageView>
+                     <Label fx:id="lblDisplay" layoutX="170.0" layoutY="14.0" text="The Wordsearch Games">
+                        <font>
+                           <Font name="Bodoni MT Black Italic" size="43.0" />
+                        </font>
+                     </Label>
+                     <Button layoutX="375.0" layoutY="141.0" mnemonicParsing="false" onAction="#btnEnterPlayerOneName" text="Enter Player Name: ">
+                        <font>
+                           <Font name="Constantia Bold Italic" size="16.0" />
+                        </font>
+                     </Button>
+                     <TextField fx:id="txtEnterPlayerOneName" layoutX="386.0" layoutY="183.0" />
+                     <Button layoutX="376.0" layoutY="243.0" mnemonicParsing="false" onAction="#btnEnterPlayerOneAge" text="Enter Player Age:">
+                        <font>
+                           <Font name="Constantia Bold Italic" size="16.0" />
+                        </font>
+                     </Button>
+                     <TextField fx:id="txtEnterPlayerOneAge" layoutX="384.0" layoutY="286.0" />
+                     <Label layoutX="230.0" layoutY="60.0" text="The Epic Fanticy Journey Through Words!">
+                        <font>
+                           <Font name="Century Schoolbook Bold Italic" size="20.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="460.0" layoutY="383.0" />
+                     <Button layoutX="317.0" layoutY="386.0" mnemonicParsing="false" onAction="#btnSetDimentions" text="Set Dimention">
+                        <font>
+                           <Font name="Constantia Bold Italic" size="16.0" />
+                        </font></Button>
+                     <TextField fx:id="txtSetDimention" layoutX="458.0" layoutY="388.0" />
+                  </children>
+               </AnchorPane>
+           </content>
+         </Tab>
+         <Tab text="Choose Levels">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <ImageView fitHeight="848.0" fitWidth="1513.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../pics/Fantasy-wallpapers-HD.jpg" />
+                        </image>
+                     </ImageView>
+                     <Label layoutX="192.0" layoutY="14.0" text="Choose Your Genre/Level">
+                        <font>
+                           <Font name="Bodoni MT Black Italic" size="43.0" />
+                        </font>
+                     </Label>
+                     <Button layoutX="126.0" layoutY="158.0" mnemonicParsing="false" onAction="#butChooseCandyLand" text="Candy Land">
+                        <font>
+                           <Font name="Californian FB" size="17.0" />
+                        </font>
+                     </Button>
+                     <Button layoutX="116.0" layoutY="362.0" mnemonicParsing="false" onAction="#butChooseAnimalTopia" text="Animaltopia ">
+                        <font>
+                           <Font name="Century" size="17.0" />
+                        </font>
+                     </Button>
+                     <Button fx:id="btnHandleHolidays" disable="true" layoutX="427.0" layoutY="148.0" mnemonicParsing="false" onAction="#btnHolidays" text="Holidays">
+                        <font>
+                           <Font name="Century" size="17.0" />
+                        </font>
+                     </Button>
+                     <Button fx:id="btnHandleBillionares" disable="true" layoutX="392.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnBillionares" prefHeight="24.0" prefWidth="192.0" text="Billionares">
+                        <font>
+                           <Font name="Century" size="17.0" />
+                        </font>
+                     </Button>
+                     <Button fx:id="btnHandleGreekMythology" disable="true" layoutX="694.0" layoutY="148.0" mnemonicParsing="false" onAction="#btnGreekMythology" text="Greek Mythology " textAlignment="CENTER">
+                        <font>
+                           <Font name="Century" size="17.0" />
+                        </font>
+                     </Button>
+                     <Button fx:id="btnHandleCountries" disable="true" layoutX="734.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnCountries" text="Countires">
+                        <font>
+                           <Font name="Century" size="17.0" />
+                        </font>
+                     </Button>
+                     <ImageView fitHeight="152.0" fitWidth="233.0" layoutX="62.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../pics/candyland.jpg" />
+                        </image>
+                     </ImageView>
+                     <ImageView fitHeight="176.0" fitWidth="262.0" layoutX="55.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../pics/animals.jpg" />
+                        </image>
+                     </ImageView>
+                     <ImageView fitHeight="164.0" fitWidth="256.0" layoutX="348.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../pics/bigHolidays.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fitHeight="165.0" fitWidth="280.0" layoutX="348.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../pics/Billionares.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fitHeight="166.0" fitWidth="299.0" layoutX="631.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../pics/greek Mythology.jpg" />
+                        </image>
+                     </ImageView>
+                     <ImageView fitHeight="186.0" fitWidth="235.0" layoutX="667.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../pics/countries.jpg" />
+                        </image>
+                     </ImageView>
+                     <Label layoutX="415.0" layoutY="109.0" text="Some Experience">
+                        <font>
+                           <Font name="Bernard MT Condensed" size="18.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="130.0" layoutY="109.0" text="No Experience">
+                        <font>
+                           <Font name="Bernard MT Condensed" size="18.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="722.0" layoutY="109.0" text="Lots Of Experience">
+                        <font>
+                           <Font name="Bernard MT Condensed" size="18.0" />
+                        </font>
+                     </Label>
+                     <Button layoutX="427.0" layoutY="591.0" mnemonicParsing="false" onAction="#btnCheatExperience" text="Cheat Experience">
+                        <font>
+                           <Font name="Bookman Old Style" size="16.0" />
+                        </font>
+                     </Button>
+                  </children></AnchorPane>
+           </content>
+         </Tab>
+       <Tab text="Play Wordsearch">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="830.0" prefWidth="1390.0">
+                  <children>
+                     <ImageView fx:id="imgBackground" blendMode="DARKEN" fitHeight="849.0" fitWidth="1551.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../pics/Fantasy-wallpapers-HD.jpg" />
+                        </image>
+                     </ImageView>
+                     <Rectangle arcHeight="5.0" arcWidth="5.0" height="681.0" layoutX="713.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" width="638.0" />
+                     <Line endX="-100.0" endY="685.0" layoutX="1165.0" layoutY="73.0" startX="-100.0" startY="4.0" stroke="WHITE" strokeWidth="3.0" />
+                     <Label fx:id="lblDisplay1" layoutX="271.0" layoutY="21.0" text="The Wordsearch Games">
+                        <font>
+                           <Font name="Bodoni MT Black Italic" size="43.0" />
+                        </font>
+                     </Label>
+                     <Button fx:id="btnStart" layoutX="50.0" layoutY="35.0" mnemonicParsing="false" onAction="#start" prefHeight="24.0" prefWidth="41.0" text="Start" />
+                     <ListView fx:id="lstListOfWords" layoutX="723.0" layoutY="115.0" prefHeight="189.0" prefWidth="156.0" />
+                     <Label layoutX="779.0" layoutY="89.0" text="Word List" textFill="WHITE" />
+                     <Label layoutX="760.0" layoutY="332.0" text="Word Selected: " textFill="WHITE" />
+                     <Label fx:id="lblWordSelected" layoutX="855.0" layoutY="332.0" text="____________" textFill="WHITE" />
+                     <ListView fx:id="lstWordsFound" layoutX="901.0" layoutY="114.0" prefHeight="190.0" prefWidth="149.0" />
+                     <Label layoutX="940.0" layoutY="89.0" text="Words Found" textFill="WHITE" />
+                     <GridPane fx:id="gdpPlayGrid" gridLinesVisible="true" layoutX="27.0" layoutY="73.0" prefHeight="271.0" prefWidth="297.0">
+                        <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" minWidth="35" prefWidth="30" />
+                  
+                                                      </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints minHeight="35" prefHeight="30" vgrow="SOMETIMES" />
+                  
+                                                      </rowConstraints>
+                     </GridPane>
+                     <Label fx:id="lblWinOrLose" layoutX="719.0" layoutY="407.0" prefHeight="17.0" prefWidth="342.0" text="___________________________________________________________" textFill="WHITE" />
+                     <Button layoutX="111.0" layoutY="35.0" mnemonicParsing="false" onAction="#btnResetPuzzle" text="Reset" />
+                     <Button layoutX="176.0" layoutY="35.0" mnemonicParsing="false" onAction="#btnReplay" text="Replay" />
+                     <Label layoutX="737.0" layoutY="360.0" text="Start Letter: " textFill="WHITE" />
+                     <Label layoutX="860.0" layoutY="360.0" text="End Letter: " textFill="WHITE" />
+                     <Label fx:id="lblStartLetter" layoutX="804.0" layoutY="360.0" text="________" textFill="WHITE" />
+                     <Label fx:id="lblEndLetter" layoutX="920.0" layoutY="360.0" text="________" textFill="WHITE" />
+                     <ListView fx:id="lstPlayerOne" layoutX="807.0" layoutY="459.0" prefHeight="202.0" prefWidth="155.0" />
+                     <Label layoutX="851.0" layoutY="436.0" text="Player Info" textFill="WHITE" />
+                     <Label layoutX="1157.0" layoutY="88.0" text="Special Clues" textFill="WHITE">
+                        <font>
+                           <Font name="Constantia Bold Italic" size="16.0" />
+                        </font>
+                     </Label>
+                     <Button fx:id="btnFxLetterChange" layoutX="1103.0" layoutY="125.0" mnemonicParsing="false" onAction="#btnChooseLetters" prefHeight="23.0" prefWidth="207.0" text="Use Letter Change (100 Points)">
+                        <font>
+                           <Font name="Constantia Bold Italic" size="13.0" />
+                        </font>
+                     </Button>
+                     <ListView fx:id="lstOfLetters" layoutX="1148.0" layoutY="159.0" onMouseClicked="#lstClickedOnListOfLetters" prefHeight="118.0" prefWidth="118.0" />
+                     <ListView fx:id="lstDefinitions" disable="true" layoutX="1096.0" layoutY="486.0" prefHeight="74.0" prefWidth="223.0" />
+                     <Label layoutX="1176.0" layoutY="459.0" prefHeight="17.0" prefWidth="64.0" text=" Definitions" textAlignment="CENTER" textFill="WHITE" />
+                     <Button layoutX="1134.0" layoutY="356.0" mnemonicParsing="false" onAction="#btnFindLetter" text="Find Letter (100 Points)" />
+                     <Label layoutX="1098.0" layoutY="288.0" text="Notice: " textFill="WHITE" />
+                     <Label fx:id="lblNotice" layoutX="1178.0" layoutY="280.0" text="__________" textFill="WHITE" />
+                     <Label layoutX="1075.0" layoutY="305.0" text="Letter Choosen: " textFill="WHITE" />
+                     <Label fx:id="lblLetterChosen" layoutX="1183.0" layoutY="305.0" text="________" textFill="WHITE" />
+                     <TextField fx:id="txtFindLetter" layoutX="1129.0" layoutY="424.0" />
+                     <Label layoutX="1083.0" layoutY="394.0" text="Please input which letter you are looking for: " textFill="WHITE" />
+                     <Label layoutX="860.0" layoutY="385.0" text="Result: " textFill="WHITE" />
+                     <Button layoutX="1075.0" layoutY="568.0" mnemonicParsing="false" onAction="#btnGambleForPoints" text="Matching For Points: " />
+                     <ListView fx:id="lstDefinitionForTestWords" layoutX="1073.0" layoutY="603.0" onMouseClicked="#lstClickedOnGambleForPoints" prefHeight="44.0" prefWidth="261.0" />
+                     <Label fx:id="lblWordCheck" layoutX="1223.0" layoutY="572.0" text="________" textFill="WHITE" />
+                     <Label fx:id="lblShowMatching" layoutX="1078.0" layoutY="653.0" text="__________" textFill="WHITE" />
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+     </tabs>
+   </TabPane>
+</AnchorPane>
